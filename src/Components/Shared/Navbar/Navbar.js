@@ -60,7 +60,7 @@ const Navbar = () => {
                             className="block"
                             onClick={toggleDrawer}
                         >
-                            Web Development
+                           Mathematics
                         </ScrollLink>
                     </li>
                     <li className="py-1 lg:px-4 hover:bg-gray-200">
@@ -72,7 +72,7 @@ const Navbar = () => {
                             className="block"
                             onClick={toggleDrawer}
                         >
-                            App Development
+                            Physics
                         </ScrollLink>
                     </li>
                     <li className="py-1 lg:px-4 hover:bg-gray-200">
@@ -84,7 +84,7 @@ const Navbar = () => {
                             className="block"
                             onClick={toggleDrawer}
                         >
-                            Graphic Design
+                            Chemistry
                         </ScrollLink>
                     </li>
                 </ul>

@@ -14,9 +14,9 @@ const Banner = () => {
     >
         <div className="max-w-xl text-start ltr:sm:text-left rtl:sm:text-right lg:mt-14 mt-6">
         <h1 className="text-3xl font-bold text-white sm:text-5xl">
-        Unlock Your Potential with
+        Partner For Your 
 
-            <strong className="block font-bold primary-text">Cutting-Edge Learning. </strong>
+            <strong className="block font-bold primary-text">Future Of Learning. </strong>
         </h1>
 
         <p className="mt-4 max-w-lg text-white sm:text-xl/relaxed">

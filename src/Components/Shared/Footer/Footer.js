@@ -125,24 +125,24 @@ const Footer = () => {
 
         <div className="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left">
             <div>
-            <strong className="font-medium text-white"> Services </strong>
+            <strong className="font-medium text-white"> Courses </strong>
 
             <ul className="mt-6 space-y-1">
                 <li>
                 <a className="text-white transition hover:text-white/75" href="#">
-                    Graphic Design
+                    Mathematics
                 </a>
                 </li>
 
                 <li>
                 <a className="text-white transition hover:text-white/75" href="#">
-                    App Development
+                    Physics
                 </a>
                 </li>
 
                 <li>
                 <a className="text-white transition hover:text-white/75" href="#">
-                    Web Development
+                   Chemistry
                 </a>
                 </li>
             </ul>
