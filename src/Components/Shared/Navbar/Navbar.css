@@ -1,0 +1,79 @@
+
+.nav-area {
+    height: 70px;
+    background: white;
+    color: #1e40af;
+}
+
+.nav-scroll {
+    height: 70px;
+    z-index: 500;
+    transition: 0.3s ease-out;
+    background: #1e40af;
+    color: #fff !important;
+    box-shadow: 0px 2px 4px -1px rgba(128, 128, 128, 0.2), 0px 4px 5px 0px rgba(128, 128, 128, 0.14),
+        0px 1px 10px 0px rgba(128, 128, 128, 0.12);
+}
+
+.nav-img {
+    width: 48px;
+    height: 40px
+}
+
+.nav-lists {
+    margin: 0;
+    transition: 0.3s;
+}
+
+.list-links {
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+   
+}
+
+.list-links:hover {
+    color: #020787;
+    font-weight: 600;
+}
+
+.list-links::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 45%;
+    width: 0%;
+    height: 2px;
+    background:#144c95;
+    transition: 0.3s ease-out;
+}
+
+.list-links:hover::after {
+    left: 11%;
+    width: 76%;
+    color: #fff;
+}
+
+.sign-btn {
+    background-color: #1e40af;;
+}
+
+.link-color:hover {
+    background-color: #144c95;
+}
+
+
+@media only screen and (max-width: 425px) {
+
+    .nav-img {
+        width: 23px;
+        height: 23px
+    }
+
+    .text-logo {
+        font-size: 16px;
+        padding-top: 3px;
+    }
+
+}

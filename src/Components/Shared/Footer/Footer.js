@@ -3,8 +3,8 @@ import React from 'react';
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
-    <footer className="bg-blue-800">
-    <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
+    <footer className="bg-blue-800  mt-16">
+    <div className="mx-auto px-6 pb-8 pt-16 sm:px-6 lg:px-24">
         <div className="mx-auto max-w-md">
         <strong className="block text-center text-xl font-bold text-white sm:text-3xl">
             Want us to email you with the latest blockbuster news?
@@ -188,15 +188,6 @@ const Footer = () => {
         <div className="mt-2 border-t border-gray-100 pt-8">
         <p className="text-center text-xs/relaxed text-white">
           &copy; Company {currentYear}. All rights reserved.
-
-            <br />
-
-            Created with
-            <a href="#" className="text-white underline transition hover:text-white/75">Laravel</a>
-            and
-            <a href="#" className="text-white underline transition hover:text-white/75"
-            >Laravel Livewire</a
-            >.
         </p>
         </div>
     </div>
