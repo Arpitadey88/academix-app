@@ -93,27 +93,14 @@ const Navbar = () => {
 
         <li className="nav-lists">
             <ScrollLink
-                to="services"
-                smooth={true}
-                duration={500}
-                offset={10}
-                className="list-links transition  font-medium text-base lg:px-3 lg:py-2 py-4 md:mx-2 rounded-md"
-                onClick={toggleDrawer}
-            >
-                Services
-            </ScrollLink>
-        </li>
-
-        <li className="nav-lists">
-            <ScrollLink
-                to="contact-us"
+                to="top-students"
                 smooth={true}
                 duration={500}
                 offset={-20}
                 className="list-links transition  font-medium text-base lg:px-3 lg:py-2 py-4 md:mx-2 rounded-md"
                 onClick={toggleDrawer}
             >
-                Contact
+               Our Students
             </ScrollLink>
         </li>
 

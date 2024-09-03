@@ -43,8 +43,12 @@ const TopStudents = () => {
 
 
     return (
-        <section id="Projects" className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 justify-items-center justify-center lg:gap-y-20 gap-y-10 gap-x-14 my-16">
-            {students.map(student => (
+        <section id="top-students"  className=" lg:mt-28 mt-48 mb-16">
+            <div>
+                <h1 className='text-center lg:pb-12 py-6 lg:text-5xl text-3xl primary-text font-semibold'>Our Top Student</h1>
+            </div>
+           <div className='w-fit mx-auto  lg:gap-y-20 gap-y-10 gap-x-14 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 justify-items-center justify-center'>
+           {students.map(student => (
                 <div key={student.id} className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
                     <div className='relative '>
                         
@@ -141,6 +145,7 @@ const TopStudents = () => {
                     </div>
                 </dialog>
             )}
+           </div>
         </section>
     );
 };

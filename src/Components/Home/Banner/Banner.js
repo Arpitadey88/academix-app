@@ -1,4 +1,5 @@
 import React from 'react';
+import about from '../../../assets/about1.jpg';
 
 const Banner = () => {
     return (
@@ -39,6 +40,28 @@ const Banner = () => {
             </a>
         </div>
         </div>
+    </div>
+    <div class="relative flex justify-center items-center dark:bg-gray-800 w-full  lg:pe-0 pe-1 mt-24">
+    <div class="absolute max-w-5xl cursor-pointer dark:text-white z-40 ">
+        <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1  primary-bg rounded-md dark:bg-gray-200"></span>
+        <div class="overflow-hidden relative p-4 bg-white dark:bg-gray-800 primary-border border-2 border-gt-green dark:border-gray-300 rounded-md lg:hover:scale-105 transition duration-500">
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-3  lg:grid-cols-3 lg:gap-6">
+              <div class="relative h-32 overflow-hidden rounded-md md:h-32 lg:h-32 ">
+                <img
+                  alt=""
+                  src={about}
+                  class="absolute inset-0 h-full w-full"
+                />
+              </div>
+        
+              <div class="col-span-2 flex items-center">
+                <p class=" text-gray-600 text-md font-bold text-justify">
+                At Academix, we are dedicated to providing cutting-edge educational solutions that empower students and educators alike. Our platform is tailored to foster academic growth and innovation, ensuring that every learner can thrive in today's dynamic educational landscape
+                </p>
+              </div>
+            </div>
+        </div>
+    </div>
     </div>
     </section>
     );

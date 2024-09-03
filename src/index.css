@@ -17,6 +17,9 @@
 .primary-bg {
     background-color: #f39202;
 }
+.primary-border{
+    border: 1px solid #f39202;
+}
 .primary-btn{
     border: 2px solid #f39202;
     border-radius: 6px;
