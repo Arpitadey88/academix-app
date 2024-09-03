@@ -2,7 +2,7 @@ import React from 'react';
 
 const CallToAction = () => {
     return (
-        <section className="w-full flex bg-gray-200 mt-12">
+        <section id="contacts" className="w-full flex bg-gray-200 mt-12">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
             <div className="text-center space-y-5">
                 <h2 className="text-base font-semibold primary-text tracking-wide uppercase">Get started now</h2>

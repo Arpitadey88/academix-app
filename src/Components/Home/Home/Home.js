@@ -13,7 +13,7 @@ const Home = () => {
             <Banner/>
             <TopStudents id="top-students"/>
             <About id="about"/>
-            <CallToAction/>
+            <CallToAction id="contacts"/>
             <Footer/>
         </div>
     );

@@ -103,6 +103,18 @@ const Navbar = () => {
                Our Students
             </ScrollLink>
         </li>
+        <li className="nav-lists">
+            <ScrollLink
+                to="contacts"
+                smooth={true}
+                duration={500}
+                offset={-20}
+                className="list-links transition  font-medium text-base lg:px-3 lg:py-2 py-4 md:mx-2 rounded-md"
+                onClick={toggleDrawer}
+            >
+               Contacts
+            </ScrollLink>
+        </li>
 
     </>
     return (
@@ -123,7 +135,7 @@ const Navbar = () => {
                                     </svg>
                                 )}
                             </label>
-                            {isDrawerOpen && <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-1 shadow bg-gray-100 w-52 py-6">
+                            {isDrawerOpen && <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-1 shadow primary-bg w-52 py-6">
                                 {navOptions}
                             </ul>}
 
