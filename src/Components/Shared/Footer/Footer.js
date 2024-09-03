@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
-    <footer className="secondary-bg mt-10">
+    <footer className="secondary-bg">
     <div className="mx-auto px-6 pb-8 pt-16 sm:px-6 lg:px-24">
         <div className="mx-auto max-w-md">
         <strong className="block text-center text-xl font-bold text-white sm:text-3xl">
@@ -22,7 +22,7 @@ const Footer = () => {
             />
 
             <button
-                className="absolute end-1 top-1/2 -translate-y-1/2 rounded-full primary-bg px-5 py-3 text-sm font-medium text-white transition hover:bg-blue-700"
+                className="absolute end-1 top-1/2 -translate-y-1/2 rounded-full primary-bg px-5 py-3 text-sm font-medium text-white transition hover:bg-black"
             >
                 Subscribe
             </button>

@@ -50,8 +50,8 @@ const Navbar = () => {
                 </svg>
             </button>
             {isCoursesOpen && (
-                <ul className="absolute left-0 top-10 mt-2 py-2 primary-text bg-white border text-[15px] rounded-md shadow-lg z-10 w-40">
-                    <li className="py-1 lg:px-4 hover:bg-gray-200">
+                <ul className="absolute left-0 top-10 mt-2 py-2 primary-text bg-black border text-[15px] rounded-md shadow-lg z-10 w-40">
+                    <li className="py-1 lg:px-4 hover:bg-amber-500 hover:text-white">
                         <ScrollLink
                             to="web-development"
                             smooth={true}
@@ -63,7 +63,7 @@ const Navbar = () => {
                            Mathematics
                         </ScrollLink>
                     </li>
-                    <li className="py-1 lg:px-4 hover:bg-gray-200">
+                    <li className="py-1 lg:px-4 hover:bg-amber-500 hover:text-white">
                         <ScrollLink
                             to="web-development"
                             smooth={true}
@@ -75,7 +75,7 @@ const Navbar = () => {
                             Physics
                         </ScrollLink>
                     </li>
-                    <li className="py-1 lg:px-4 hover:bg-gray-200">
+                    <li className="py-1 lg:px-4 hover:bg-amber-500 hover:text-white">
                         <ScrollLink
                             to="graphic-design"
                             smooth={true}
@@ -108,7 +108,7 @@ const Navbar = () => {
     return (
         <>
             <div className=''>
-                <div className={color ? 'nav-scroll navbar z-[100] fixed top-0 sm:flex sm:justify-between  lg:px-24' : 'nav-area navbar fixed top-0 z-[100] sm:flex sm:justify-between  lg:px-24'}>
+                <div className={color ? 'nav-scroll text-white navbar z-[100] fixed top-0 sm:flex sm:justify-between  lg:px-24' : 'nav-area navbar fixed top-0 z-[100] sm:flex sm:justify-between  lg:px-24'}>
 
                     <div className="navbar-start  lg:w-1/3 w-2/3 lg:justify-start flex justify-between">
                         <div className="dropdown">

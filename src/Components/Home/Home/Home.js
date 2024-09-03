@@ -4,6 +4,7 @@ import Footer from '../../Shared/Footer/Footer';
 import Banner from '../Banner/Banner';
 import TopStudents from '../TopStudents/TopStudents';
 import About from '../About/About';
+import CallToAction from '../CallToAction/CallToAction';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <Banner/>
             <TopStudents id="top-students"/>
             <About id="about"/>
+            <CallToAction/>
             <Footer/>
         </div>
     );
