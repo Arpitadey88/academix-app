@@ -116,8 +116,8 @@ const TopStudents = () => {
 
                         <div className="flex flex-1 flex-col justify-between">
                             <div className="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                            <h3 className="font-bold text-lg">{selectedStudent.name}</h3>
-
+                            <h3 className="font-bold text-lg">{selectedStudent.name}</h3>                              
+                            <p className="py-2 text-sm font-medium">Gender: {selectedStudent.gender}</p>                                
                             <p className="py-2 text-sm font-medium">Email: {selectedStudent.email}</p>
                             <p className="py-2 text-sm font-medium">Phone: {selectedStudent.phone}</p>
                             <p className="py-2 text-sm font-medium">Address: {selectedStudent.address.street}, {selectedStudent.address.city}, {selectedStudent.address.country}</p>
