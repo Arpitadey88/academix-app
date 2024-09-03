@@ -33,7 +33,7 @@ const TopStudents = () => {
         console.log('Student selected:', student);
         setSelectedStudent(student);
 
-        const modal = document.getElementById('my_modal_5');
+        const modal = document.getElementById('my_modal_4');
         if (modal) {
             modal.showModal();
         } else {
@@ -43,7 +43,7 @@ const TopStudents = () => {
 
 
     return (
-        <section id="Projects" className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 justify-items-center justify-center lg:gap-y-20 gap-y-10 gap-x-14 mt-10 mb-5">
+        <section id="Projects" className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 justify-items-center justify-center lg:gap-y-20 gap-y-10 gap-x-14 my-16">
             {students.map(student => (
                 <div key={student.id} className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
                     <div className='relative '>
@@ -99,16 +99,44 @@ const TopStudents = () => {
             ))}
 
             {selectedStudent && (
-                <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-                    <div className="modal-box w-11/12 max-w-5xl">
-                        <h3 className="font-bold text-lg">{selectedStudent.name}</h3>
-                        <p className="py-4">Email: {selectedStudent.email}</p>
-                        <p className="py-4">Phone: {selectedStudent.phone}</p>
-                        <p className="py-4">Address: {selectedStudent.address.street}, {selectedStudent.address.city}, {selectedStudent.address.country}</p>
+                <dialog id="my_modal_4" className="modal ">
+                    <div className="modal-box lg:w-full ">
+                    <article className="flex bg-white transition hover:shadow-xl">
+                        <div className="hidden sm:block sm:basis-56">
+                            <img
+                            alt={selectedStudent?.name}
+                            src={selectedStudent?.image}
+                            className="aspect-square h-full w-full object-cover"
+                            />
+                        </div>
+
+                        <div className="flex flex-1 flex-col justify-between">
+                            <div className="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+                            <h3 className="font-bold text-lg">{selectedStudent.name}</h3>
+
+                            <p className="py-2 text-sm font-medium">Email: {selectedStudent.email}</p>
+                            <p className="py-2 text-sm font-medium">Phone: {selectedStudent.phone}</p>
+                            <p className="py-2 text-sm font-medium">Address: {selectedStudent.address.street}, {selectedStudent.address.city}, {selectedStudent.address.country}</p>
+                            <p className="font-semibold">Courses:</p>
+                                <ul className="list-disc pl-5">
+                                    {selectedStudent?.courses?.map((course, index) => (
+                                        <li key={index}>{course}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    </article>                       
                         <div className="modal-action">
-                            <button className="btn" onClick={() => console.log('Edit student')}>Edit</button>
-                            <button className="btn" onClick={() => console.log('Remove student')}>Remove</button>
-                            <button className="btn" onClick={() => document.getElementById('my_modal_5').close()}>Close</button>
+                            <button className="btn" onClick={() => console.log('Edit student')}><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="edit">
+                                <g>
+                                    <path fill='#f39202' d="M19 20H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2zM5 18h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71L16.66 2.6A2 2 0 0 0 14 2.53l-9 9a2 2 0 0 0-.57 1.21L4 16.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 18zM15.27 4 18 6.73l-2 1.95L13.32 6z"></path>
+                                </g>
+                                </svg></button>
+                            <button className="btn" onClick={() => console.log('Remove student')}><svg xmlns="http://www.w3.org/2000/svg"  width="36" height="36" fill="none" id="delete">
+                                <path fill="#ef0435" d="M15 3a1 1 0 0 1 1 1h2a1 1 0 1 1 0 2H6a1 1 0 0 1 0-2h2a1 1 0 0 1 1-1h6Z"></path>
+                                <path fill="#ef0435" fill-rule="evenodd" d="M6 7h12v12a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V7Zm3.5 2a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 1 0v-9a.5.5 0 0 0-.5-.5Zm5 0a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 1 0v-9a.5.5 0 0 0-.5-.5Z" clip-rule="evenodd"></path>
+                                </svg></button>
+                            <button className="btn" onClick={() => document.getElementById('my_modal_4').close()}>Back</button>
                         </div>
                     </div>
                 </dialog>

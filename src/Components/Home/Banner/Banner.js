@@ -3,10 +3,10 @@ import React from 'react';
 const Banner = () => {
     return (
     <section
-    className="relative bg-[url(https://img.freepik.com/free-photo/city-committed-education-collage-concept_23-2150062213.jpg?w=1060&t=st=1725359493~exp=1725360093~hmac=c67e7529be05890885e4868a0471477bfdee61f4d23cd1885b7e9639b9c61cfa)] bg-cover bg-center bg-no-repeat"
+    className="relative bg-[url(https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)] bg-cover bg-center bg-no-repeat"
     >
     <div
-        className="absolute inset-0 bg-gray-900/25 bg-opacity-50 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
+        className="absolute inset-0 bg-gray-900/45 bg-opacity-50 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
     ></div>
 
     <div

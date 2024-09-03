@@ -2,13 +2,13 @@
 .nav-area {
     height: 70px;
     background: white;
-    color: #04a8c6;
+    color: #252222;
 }
 
 .nav-scroll {
     height: 70px;
     z-index: 500;
-    transition: 0.3s ease-out;
+    /* transition: 0.1s; */
     background: #f39202;
     color: #fff !important;
     box-shadow: 0px 2px 4px -1px rgba(128, 128, 128, 0.2), 0px 4px 5px 0px rgba(128, 128, 128, 0.14),
@@ -36,7 +36,7 @@
 }
 
 .list-links:hover {
-    color: #020787;
+    color: #f39202;
     font-weight: 600;
 }
 
@@ -47,7 +47,7 @@
     left: 45%;
     width: 0%;
     height: 2px;
-    background:#144c95;
+    background:#f39202;
     transition: 0.3s ease-out;
 }
 

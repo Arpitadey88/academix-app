@@ -160,7 +160,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end  w-1/3">
-                    <Link href='#'><button className="hover:bg-gray-700/75 secondary-bg text-white rounded-md px-5 py-2.5 text-sm font-medium hover:text-white shadow ">Login</button></Link>
+                    <Link href='#'><button className="hover:bg-amber-600 secondary-bg text-white rounded-md px-5 py-2.5 text-sm font-medium hover:text-white shadow ">Login</button></Link>
                 </div>
                 </div>
             </div>
