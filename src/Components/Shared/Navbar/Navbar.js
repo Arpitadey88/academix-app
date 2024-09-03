@@ -39,7 +39,7 @@ const Navbar = () => {
                 About
             </ScrollLink>
         </li>
-        <li className="nav-lists relative">
+        <li className="nav-lists relative ">
             <button
                 onClick={toggleCoursesMenu}
                 className="list-links transition font-medium text-base lg:px-3 lg:py-0 py-4 md:mx-2 rounded-md flex items-center"
@@ -50,7 +50,7 @@ const Navbar = () => {
                 </svg>
             </button>
             {isCoursesOpen && (
-                <ul className="absolute left-0 top-10 mt-2 py-2 bg-white border text-[15px] rounded-md shadow-lg z-10 w-40">
+                <ul className="absolute left-0 top-10 mt-2 py-2 primary-text bg-white border text-[15px] rounded-md shadow-lg z-10 w-40">
                     <li className="py-1 lg:px-4 hover:bg-gray-200">
                         <ScrollLink
                             to="web-development"
@@ -160,7 +160,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end  w-1/3">
-                    <Link href='#'><button className="hover:bg-gray-700/75 rounded-md px-5 py-2.5 text-sm font-medium hover:text-white shadow ">Login</button></Link>
+                    <Link href='#'><button className="hover:bg-gray-700/75 secondary-bg text-white rounded-md px-5 py-2.5 text-sm font-medium hover:text-white shadow ">Login</button></Link>
                 </div>
                 </div>
             </div>

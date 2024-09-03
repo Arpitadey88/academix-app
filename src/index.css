@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .primary-text {
-    color: #1e40af;
+    color: #f39202;
 }
 
 .secondary-text {
@@ -11,9 +11,21 @@
 }
 
 .secondary-bg {
-    background-color: #07326a;
+    background-color: #04a8c6;
 }
 
 .primary-bg {
-    background-color: #1e40af;
+    background-color: #f39202;
+}
+.primary-btn{
+    border: 2px solid #f39202;
+    border-radius: 6px;
+    background-color: white;
+    color: #f39202;
+    padding: 6px 18px ;
+}
+.primary-btn:hover{
+    background-color: #f39202;
+    color: white;
+    transition: 0.3s ease-out;
 }
