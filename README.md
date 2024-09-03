@@ -19,6 +19,8 @@ This repository contains the source code for the Academix website. The website i
 
 ##  Production Link
 ### https://academix-app-pi.vercel.app/
+## Public Api Link
+### https://freetestapi.com/api/v1/students
 ## Available Scripts
 
 In the project directory, you can run:
