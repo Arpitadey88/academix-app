@@ -1,9 +1,9 @@
 # Academix Website
 ## Overview
-This repository contains the source code for the Academix website. The website is designed to provide a comprehensive educational platform, allowing users to explore courses, sign up for services, and learn more about the benefits of using Academix.
+This repository contains the source code for the Academix website. The website is designed to provide a comprehensive educational platform, displaying top student dummy information from external api using modal and learn more about the benefits of using Academix.
 ### Features
 <li><b>Dynamic Content:</b> Data is dynamically loaded from a JSON file, ensuring scalability and ease of updates.</li>
-<li><b>Local Storage Management:</b> User data, such as selected courses, is managed using local storage, ensuring a persistent and personalized experience.
+<li><b>Local Storage Management:</b> Student data, such as selected student, is managed using local storage, ensuring a persistent and personalized experience.
 </li>
 <li><b>Responsive Design:</b> The website is fully responsive, providing an optimal viewing experience across a wide range of devices.</li>
 <li><b>Tailwind CSS Integration:</b> Utilizes Tailwind CSS for fast and flexible styling.</li>
